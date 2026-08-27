@@ -4,9 +4,9 @@
   "private": true,
   "description": "RustAcademy NestJS backend",
   "scripts": {
-    "build": "nest build",
-    "start": "node dist/main",
-    "start:dev": "nest start --watch",
+    "build": "node init && nest build",
+    "start": "node init && node dist/main",
+    "start:dev": "node init && nest start --watch",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "test": "jest --config jest.config.ts",
     "test:ci": "NODE_ENV=test jest --config jest.config.ts --runInBand"
